@@ -864,7 +864,8 @@ a {
 }
 
 .checkboxHidden {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .checkboxNotChecked {

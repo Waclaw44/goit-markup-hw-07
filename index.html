@@ -84,7 +84,14 @@
                     <svg class="svgInModal" width="12" height="12">
                       <use href="./images/icons.svg#icon-name-form"></use>
                     </svg>
-                    <input class="borderInModal" type="text" name="name" minlength="3" required />
+                    <input
+                      class="borderInModal"
+                      type="text"
+                      name="name"
+                      minlength="3"
+                      required
+                      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                    />
                   </div>
                   <div class="modal-wrapper">
                     <label class="modalIn">Telefon </label>
@@ -97,6 +104,7 @@
                       name="telephone"
                       minlength="9"
                       required
+                      pattern="[0-9\+\-]{9,15}"
                     />
                   </div>
                   <div class="modal-wrapper">

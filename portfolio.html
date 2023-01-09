@@ -1,4 +1,4 @@
-P<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
@@ -22,28 +22,30 @@ P<!DOCTYPE html>
   </head>
   <body>
     <a href="index.html"></a>
-    <header class="flexWstdioTop">
-      <div class="container headerTop">
-        <a class="WebStudio" href="index.html"><span class="wstudio">Web</span>Studio</a>
+    <header class="nav__flexw-stdio-top">
+      <div class="container nav__header-top">
+        <a class="nav__web-studio" href="index.html"
+          ><span class="nav__w-studio">Web</span>Studio</a
+        >
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="list__item">
-              <a class="linkRest" href="index.html">Agencja</a>
+              <a class="list__link-rest link--active" href="index.html">Agencja</a>
             </li>
             <li>
-              <a class="linkRest active" href="portfolio.html">Portfolio</a>
+              <a class="list__link-rest" href="portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="linkRest" href="#">Kontakt</a>
+              <a class="list__link-rest" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
         <ul class="contact__list">
           <li>
-            <a class="email" href="mailto:info@devstudio.com">
-              <svg class="telTopSvg" width="16" height="20">
+            <a class="contact__email contact__all-links" href="mailto:info@devstudio.com">
+              <svg class="contact__tel-top-svg" width="16" height="20">
                 <use
-                  class="svgcolorTop"
+                  class="contact__svg-color-top"
                   href="./images/icons.svg#icon-email"
                   width="16"
                   height="12 "
@@ -53,10 +55,10 @@ P<!DOCTYPE html>
             </a>
           </li>
           <li>
-            <a class="tel" href="tel:+48111111111">
-              <svg class="eamiTopSvg" width="16" height="16">
+            <a class="contact__tel" href="tel:+48111111111">
+              <svg class="contact__eami-top-svg" width="16" height="16">
                 <use
-                  class="svgcolorTop"
+                  class="contact__svg-color-top"
                   href="./images/icons.svg#icon-tel"
                   width="16"
                   height="16"
@@ -70,14 +72,14 @@ P<!DOCTYPE html>
     </header>
     <main>
       <section class="container buttons">
-        <button class="fiveButton" type="button">Wszystkie</button>
-        <button class="fiveButton" type="button">Strony</button>
-        <button class="fiveButton" type="button">Aplikacje</button>
-        <button class="fiveButton" type="button">Dizajn</button>
-        <button class="fiveButton" type="button">Marketing</button>
+        <button class="buttons__five" type="button">Wszystkie</button>
+        <button class="buttons__five" type="button">Strony</button>
+        <button class="buttons__five" type="button">Aplikacje</button>
+        <button class="buttons__five" type="button">Dizajn</button>
+        <button class="buttons__five" type="button">Marketing</button>
       </section>
       <section class="container">
-        <ul class="flexGraf">
+        <ul class="grid__flex-graf">
           <div class="borderImgPortfolio boderAl">
             <li>
               <img
@@ -138,7 +140,7 @@ P<!DOCTYPE html>
             </div>
           </li>
         </ul>
-        <ul class="flexGraf">
+        <ul class="grid__flex-graf">
           <li class="borderImgPortfolio boderAl">
             <img src="images/portfolio/projectPrime.jpg" alt="sluchawki" width="370" height="290" />
             <div>
@@ -187,7 +189,7 @@ P<!DOCTYPE html>
             </div>
           </li>
         </ul>
-        <ul class="flexGraf flexGrafthre">
+        <ul class="grid__flex-graf">
           <li class="borderImgPortfolio boderAl">
             <img
               src="images/portfolio/magazynLimitedEdition.jpg"
@@ -243,52 +245,58 @@ P<!DOCTYPE html>
         </ul>
       </section>
     </main>
-    <footer class="addresColor">
-      <div class="container flexAdres">
+    <footer class="adress__color">
+      <div class="container adress__flex">
         <div>
-          <div class="WebStudioAdress">
-            <span class="wstudio">Web</span><span class="wStudioAdres">Studio </span>
+          <div class="adress__web-studio">
+            <span class="adress__w-studio">Web</span><span class="adress__studio">Studio </span>
           </div>
           <address>
-            <div class="addres">m. Warszawa, Aleje Jerozolimskie 21</div>
-            <a class="email-telAdress" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="email-telAdress" href="tel:+48111111111">+48 111 111 111</a>
+            <div class="addres__bottom">m. Warszawa, Aleje Jerozolimskie 21</div>
+            <a class="addres__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="addres__email" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
         <div>
-          <h2 class="botomIconsName">Dołącz do nas</h2>
-          <ul class="botomIcons">
-            <li class="smIcons">
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+          <h2 class="addres_botom-icons-name">Dołącz do nas</h2>
+          <ul class="addres__botom-icons">
+            <li class="addres__sm-icons">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-linkedin2"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="butonEmail">
+        <div class="send__buton">
           <h2>ZAPISZ SIĘ DO NEWSLETTERA</h2>
           <fom>
-            <input class="inputSize" type="email" name="subscribe" placeholder="E-mail" required />
-            <button class="butonColor" type="submit">
-              <span> Zapisz się</span>
-              <svg class="svgMarg" width="24" height="24">
+            <input
+              class="send__input-size"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="send__buton-color" type="submit">
+              <span class="send__buton-bottom-text"> Zapisz się</span>
+              <svg class="send__svg-marg-bottom" width="24" height="24">
                 <use href="images/icons.svg#icon-send-sub"></use>
               </svg>
             </button>

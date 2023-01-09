@@ -20,13 +20,13 @@ a {
   width: 1200px;
 }
 
-.headerTop {
+.nav__header-top {
   display: flex;
   align-items: center;
   margin-top: 25px;
 }
 
-.WebStudio {
+.nav__web-studio {
   display: block;
   font-family: 'Raleway';
   color: #212121;
@@ -37,8 +37,13 @@ a {
   margin-right: 93px;
 }
 
-.wstudio {
+.nav__w-studio {
   color: #2196f3;
+}
+
+.nav__flexw-stdio-top {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 24px;
 }
 
 .navigation {
@@ -51,7 +56,7 @@ a {
   gap: 24px;
 }
 
-.linkRest {
+.list__link-rest {
   color: #212121;
   font-weight: 500;
   font-size: 1rem;
@@ -63,11 +68,11 @@ a {
   transition: 0.2s;
 }
 
-.linkRest:hover {
+.list__link-rest:hover {
   color: #2196f3;
 }
 
-.active {
+.link--active {
   color: #2196f3;
   border-bottom: 4px solid #2196f3;
   padding-bottom: 28px;
@@ -79,26 +84,26 @@ a {
   gap: 24px;
 }
 
-.tel:hover .eamiTopSvg .svgcolorTop,
-.email:hover .telTopSvg .svgcolorTop {
+.contact__tel:hover .contact__eami-top-svg .contact__svg-color-top,
+.contact__email:hover .contact__tel-top-svg .contact__svg-color-top {
   fill: #2196f3;
 }
 
-.tel:hover,
-.email:hover {
+.contact__tel:hover,
+.contact__email:hover {
   color: #2196f3;
 }
 
-.email-telAdress:hover {
+.contact__email-tel-adress:hover {
   color: #2196f3;
 }
 
-.email-tel:focus {
+.contact__email-tel:focus {
   background-color: #2196f3;
   outline: none;
 }
 
-.email {
+.contact__email {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,7 +114,7 @@ a {
   transition: 0.2s;
 }
 
-.tel {
+.contact__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -120,44 +125,44 @@ a {
   transition: 0.2s;
 }
 
-.tel,
-.email {
+.contact__tel,
+.contact__email {
   display: flex;
   align-items: center;
   gap: 8px;
   transition: 0.2s;
 }
 
-.telTopSvg {
+.contact__tel-top-svg {
   transform: translateY(20%);
   margin-left: 30px;
   margin-right: 10px;
   transition: 0.2s;
 }
 
-.eamiTopSvg {
+.contact__eami-top-svg {
   margin-left: 30px;
   margin-right: 10px;
   transition: 0.2s;
 }
 
-.svgcolorTop {
+.contact__svg-color-top {
   fill: #afb1b8;
   transition: 0.2s;
 }
 
-.svgcolorTop:hover {
+.contact__svg-color-top:hover {
   fill: #2196f3;
 }
 
-.flexTop {
+.title {
   height: 600px;
   margin-top: 25px;
   align-items: center;
   text-align: center;
 }
 
-.borderTop {
+.title__border-top {
   max-width: 1600px;
   background-image: url('../images/services/pictrueindextop.jpg'),
     linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
@@ -168,7 +173,7 @@ a {
   height: 600px;
 }
 
-.top {
+.title__top {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -181,7 +186,7 @@ a {
   margin-left: 250px;
 }
 
-.botoonIndex {
+.title__botoon-index {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -198,12 +203,12 @@ a {
   transition: 0.2s;
 }
 
-.botoonIndex:hover {
+.title__botoon-index:hover {
   color: #020202;
   background: #f5f4fa;
 }
 
-.botoonIndex:focus {
+.title__botoon-index:focus {
   background-color: #2196f3;
   outline: none;
 }
@@ -229,7 +234,7 @@ a {
   transition: opacity 300ms 300ms ease, visibility 300ms 300ms ease;
 }
 
-.modal-content {
+.modal__content {
   background-color: #ffffff;
   height: 581px;
   width: 528px;
@@ -241,12 +246,12 @@ a {
   transition-duration: 300ms;
 }
 
-.is-hidden .modal-content {
+.is-hidden .modal__content {
   transform: scale(0);
   transition-duration: 300ms;
 }
 
-.modal-content-button {
+.modal__content-button {
   background-color: #ffffff;
   color: #020202;
   width: 30px;
@@ -264,17 +269,17 @@ a {
   transition: 0.2s;
 }
 
-.modal-content-button:hover {
+.modal__content-button:hover {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
 
-.modal-wrapper:has(> .borderInModal:focus) .svgInModal,
-.modal-wrapper:hover .svgInModal {
+.modal__wrapper:has(> .modal__borderInModal:focus) .modal__svg,
+.modal__wrapper:hover .modal__svg {
   fill: #2196f3;
 }
 
-.TextModalIn {
+.modal__text-in {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -283,7 +288,7 @@ a {
   margin-bottom: 12px;
 }
 
-.modalIn {
+.modal__in {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -295,13 +300,13 @@ a {
   margin-left: 40px;
 }
 
-.svgInModal {
+.modal__svg {
   position: absolute;
   margin-left: 15px;
   margin-top: 14px;
 }
 
-.borderInModal {
+.modal__border-in {
   width: 448px;
   height: 40px;
   margin-bottom: 10px;
@@ -312,13 +317,13 @@ a {
   transition: 0.2s;
 }
 
-.borderInModal:hover,
-.borderInModal:focus {
+.modal__border-in:hover,
+.modal__border-in:focus {
   border-color: #2196f3;
   outline: none;
 }
 
-.borderInModalTwo {
+.modal__border-in-two {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-top: 12px;
@@ -329,45 +334,45 @@ a {
   transition: 0.2s;
 }
 
-.borderInModalTwo:focus,
-.borderInModalTwo:hover {
+.modal__border-in-two:focus,
+.modal__border-in-two:hover {
   border-color: #2196f3;
   outline: none;
 }
 
-.checkboxWrapper {
+.modal__checkbox-wrapper {
   position: absolute;
   margin-left: 40px;
   margin-top: 10px;
 }
 
-.checkboxHidden {
+.modal__checkbox-hidden {
   position: absolute;
   opacity: 0;
 }
 
-.checkboxNotChecked {
+.modal__checkbox-not-checked {
   position: absolute;
   transform: translate(0%, -50%);
   opacity: 1;
 }
 
-.checkboxChecked {
+.modal__checkbox-checked {
   position: absolute;
   transform: translate(0%, -50%);
   opacity: 0;
   z-index: 1;
 }
 
-.checkboxHidden:checked ~ .checkboxChecked {
+.modal__checkbox-hidden:checked ~ .modal__checkbox-checked {
   opacity: 1;
 }
 
-.checkboxHidden:checked + .checkboxNotChecked {
+.modal__checkbox-hidden:checked + .modal__checkbox-not-checked {
   opacity: 0;
 }
 
-.modalInBottom {
+.modal__in-bottom {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -375,17 +380,17 @@ a {
   color: #757575;
 }
 
-.regColorlOne {
+.modal__reg-colorl-one {
   color: #2196f3;
   text-decoration: underline;
 }
 
-.regColorlTwo {
+.modal__reg-colorl-two {
   color: #2196f3;
   text-decoration: underline;
 }
 
-.buttonInModalBotom {
+.modal__button-in-botom {
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -399,19 +404,19 @@ a {
   transition: 0.2s;
 }
 
-.buttonInModalBotom:hover,
-.buttonInModalBotom:focus {
+.modal__button-in-botom:hover,
+.modal__button-in-botom:focus {
   transform: scale(1.1);
 }
 
-.flexArticleTitle {
+.article__flex-title {
   display: flex;
   gap: 30px;
   margin-top: 94px;
   width: 1170px;
 }
 
-.borderAticle {
+.article__border {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -419,11 +424,11 @@ a {
   margin-bottom: 30px;
 }
 
-.svgMargin {
+.svg--margin {
   padding-left: 100px;
 }
 
-.articleTitle {
+.article__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -431,7 +436,7 @@ a {
   margin-bottom: 10px;
 }
 
-.articleTitleTxt {
+.article__title-txt {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -439,7 +444,7 @@ a {
   width: 270px;
 }
 
-.resthHtwoImg {
+.picture__img-txt {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -448,14 +453,14 @@ a {
   padding-top: 94px;
 }
 
-.flexImageOneIndex {
+.picture__flex-index {
   display: flex;
   margin: 30px;
   gap: 30px;
   margin-top: 50px;
 }
 
-.boxIndexTextOne {
+.picture__box-index-one {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -470,7 +475,7 @@ a {
   color: #ffffff;
 }
 
-.boxIndexTextTwo {
+.picture__box-index-two {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -485,7 +490,7 @@ a {
   color: #ffffff;
 }
 
-.boxIndexTextThere {
+.picture__box-index-there {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -500,14 +505,14 @@ a {
   color: #ffffff;
 }
 
-.flexPerson {
+.team {
   height: 648px;
   background: #f5f4fa;
   margin-top: 94px;
   height: 708px;
 }
 
-.resthHtwo {
+.team__resth-two {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -517,19 +522,19 @@ a {
   padding-top: 94px;
 }
 
-.flexImgPersonOne {
+.team__flex-img-person-one {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
 
-.ImgTxtPerson {
+.team__img-txt-person {
   width: 270px;
   height: 428px;
   background: #ffffff;
 }
 
-.personName {
+.team__person-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -538,7 +543,7 @@ a {
   margin-top: 30px;
 }
 
-.personNameTxt {
+.team__person-name-txt {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -546,13 +551,13 @@ a {
   margin-top: 10px;
 }
 
-.flexSvgIcon {
+.team__flex-svg-icon {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
-.borderSvg {
+.team__border-svg {
   background-color: #ffffff;
   margin-top: 16px;
   border: 1px;
@@ -564,31 +569,31 @@ a {
   transition: 0.2s;
 }
 
-.borderSvg:hover {
+.team__border-svg:hover {
   background-color: #2196f3;
   fill: white;
 }
-.margines {
+.team__margines {
   margin-top: 12px;
   margin-left: 12px;
 }
 
-.partners {
+.client {
   text-align: center;
   margin-top: 94px;
 }
 
-.svgPartners {
+.client__svg {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
 
-.svgcolorStreeInex {
+.client__border-svg-index {
   fill: #afb1b8;
 }
 
-.borderSvgSTreeIndex {
+.svg--color-inex {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -596,23 +601,23 @@ a {
   transition: 0.2s;
 }
 
-.borderSvgSTreeIndex:hover {
+.client__border-svg-index:hover {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
 
-.addresColor {
+.adress__color {
   background: #2f303a;
   height: 252px;
   margin-top: 94px;
 }
 
-.flexAdress {
+.adress__flex {
   height: 252px;
   background: #2f303a;
 }
 
-.WebStudioAdress {
+.adress__web-studio {
   font-family: 'Raleway';
   color: #212121;
   text-decoration: none;
@@ -623,11 +628,15 @@ a {
   padding-top: 60px;
 }
 
-.wStudioAdres {
+.adress__studio {
+  color: #2196f3;
+}
+
+.adress__w-studio {
   color: #ffffff;
 }
 
-.addres {
+.addres__bottom {
   color: #ffffff;
   margin-top: 20px;
   margin-bottom: 9px;
@@ -635,7 +644,7 @@ a {
   font-style: normal;
 }
 
-.email-telAdress {
+.addres__email {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -648,7 +657,7 @@ a {
   transition: 0.2s;
 }
 
-.botomIconsName {
+.addres_botom-icons-name {
   color: #ffffff;
   margin-top: 72px;
   margin-bottom: 20px;
@@ -662,11 +671,11 @@ a {
   text-transform: uppercase;
 }
 
-.botomIcons {
+.addres__botom-icons {
   display: flex;
   gap: 10px;
 }
-.smIcons {
+.addres__sm-icons {
   cursor: pointer;
   width: 44px;
   height: 44px;
@@ -675,7 +684,7 @@ a {
   margin-left: 70px;
 }
 
-.borderSvgAdress {
+.addres__border-svg {
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
   border-radius: 50%;
@@ -683,15 +692,15 @@ a {
   transition: 0.2s;
 }
 
-.borderSvgAdress:hover {
+.addres__border-svg:hover {
   background: #2196f3;
 }
 
-.marginesAdres {
+.addres__margines {
   margin-top: 12px;
 }
 
-.butonEmail {
+.send__buton {
   margin-top: 72px;
   margin-left: 171px;
   color: #ffffff;
@@ -700,7 +709,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.inputSize {
+.send__input-size {
   width: 358px;
   height: 50px;
   left: 815px;
@@ -715,7 +724,7 @@ a {
   align-items: baseline;
 }
 
-.butonColor {
+.send__buton-color {
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -733,18 +742,18 @@ a {
   margin-top: -50px;
 }
 
-.butonColor:hover {
+.send__buton-color:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.butonbotonText {
+.send__buton-bottom-text {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
 
-.svgMargBottom {
+.send__svg-marg-bottom {
   margin-left: 24px;
   fill: #eeeeee;
 }
@@ -761,7 +770,7 @@ a {
   padding-top: 94px;
 }
 
-.fiveButton {
+.buttons__five {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -780,17 +789,17 @@ a {
   transition: 0.2s;
 }
 
-.fiveButton:hover {
+.buttons__five:hover {
   color: #ffffff;
   background: #2196f3;
 }
 
-.fiveButton:focus {
+.buttons__five:focus {
   background-color: #2196f3;
   outline: none;
 }
 
-.flexGraf {
+.grid__flex-graf {
   display: flex;
   gap: 30px;
   padding: 0;
@@ -872,7 +881,7 @@ a {
   padding-bottom: 20px;
 }
 
-.flexAdres {
+.adress__flex {
   display: flex;
 }
 

@@ -24,27 +24,29 @@
     <a href="portfolio.html"></a>
     <header>
       <!-- NAV BOX -->
-      <div class="container headerTop">
-        <a class="WebStudio" href="index.html"><span class="wstudio">Web</span>Studio</a>
+      <div class="container nav__header-top">
+        <a class="nav__web-studio" href="index.html"
+          ><span class="nav__w-studio">Web</span>Studio</a
+        >
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="list__item">
-              <a class="linkRest active" href="index.html">Agencja</a>
+              <a class="list__link-rest link--active" href="index.html">Agencja</a>
             </li>
             <li>
-              <a class="linkRest" href="portfolio.html">Portfolio</a>
+              <a class="list__link-rest" href="portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="linkRest" href="#">Kontakt</a>
+              <a class="list__link-rest" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
         <ul class="contact__list">
           <li>
-            <a class="email all-links" href="mailto:info@devstudio.com">
-              <svg class="telTopSvg" width="16" height="20">
+            <a class="contact__email contact__all-links" href="mailto:info@devstudio.com">
+              <svg class="contact__tel-top-svg" width="16" height="20">
                 <use
-                  class="svgcolorTop"
+                  class="contact__svg-color-top"
                   href="./images/icons.svg#icon-email"
                   width="16"
                   height="12 "
@@ -54,10 +56,10 @@
             </a>
           </li>
           <li>
-            <a class="tel" href="tel:+48111111111">
-              <svg class="eamiTopSvg" width="16" height="16">
+            <a class="contact__tel" href="tel:+48111111111">
+              <svg class="contact__eami-top-svg" width="16" height="16">
                 <use
-                  class="svgcolorTop"
+                  class="contact__svg-color-top"
                   href="./images/icons.svg#icon-tel"
                   width="16"
                   height="16"
@@ -71,23 +73,23 @@
     </header>
     <main>
       <!-- TITLE BOX -->
-      <section class="flexTop">
-        <div class="borderTop">
+      <section class="title">
+        <div class="title__border-top">
           <div class="container">
-            <h1 class="top">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button type="button" class="botoonIndex" data-modal-open>Zamów usługe</button>
+            <h1 class="title__top">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button type="button" class="title__botoon-index" data-modal-open>Zamów usługe</button>
             <div class="modal is-hidden" data-modal>
-              <div class="modal-content">
-                <button class="modal-content-button" data-modal-close>x</button>
+              <div class="modal__content">
+                <button class="modal__content-button" data-modal-close>x</button>
                 <form>
-                  <div class="modal-wrapper">
-                    <h2 class="TextModalIn">Zostaw swoje dane w formularzu poniżej</h2>
-                    <label class="modalIn">Imię </label>
-                    <svg class="svgInModal" width="12" height="12">
+                  <div class="modal__wrapper">
+                    <h2 class="modal__text-in">Zostaw swoje dane w formularzu poniżej</h2>
+                    <label class="modal__in">Imię </label>
+                    <svg class="modal__svg" width="12" height="12">
                       <use href="./images/icons.svg#icon-name-form"></use>
                     </svg>
                     <input
-                      class="borderInModal"
+                      class="modal__border-in"
                       type="text"
                       name="name"
                       minlength="3"
@@ -95,13 +97,13 @@
                       pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
                     />
                   </div>
-                  <div class="modal-wrapper">
-                    <label class="modalIn">Telefon </label>
-                    <svg class="svgInModal" width="12" height="12">
+                  <div class="modal__wrapper">
+                    <label class="modal__in">Telefon </label>
+                    <svg class="modal__svg" width="12" height="12">
                       <use href="./images/icons.svg#icon-phone-form"></use>
                     </svg>
                     <input
-                      class="borderInModal"
+                      class="modal__border-in"
                       type="tel"
                       name="telephone"
                       minlength="9"
@@ -109,39 +111,40 @@
                       pattern="[0-9\+\-]{9,15}"
                     />
                   </div>
-                  <div class="modal-wrapper">
-                    <label class="modalIn">Email</label>
-                    <svg class="svgInModal" width="12" height="12">
+                  <div class="modal__wrapper">
+                    <label class="modal__in">Email</label>
+                    <svg class="modal__svg" width="12" height="12">
                       <use href="./images/icons.svg#icon-email-form"></use>
                     </svg>
-                    <input class="borderInModal" type="email" name="email" required />
+                    <input class="modal__border-in" type="email" name="email" required />
                   </div>
-                  <label class="modalIn">Komentarz</label>
+                  <label class="modal__in">Komentarz</label>
                   <textarea
-                    class="borderInModalTwo"
+                    class="modal__border-in-two"
                     placeholder="Wprowadź tekst"
                     name="feedback"
                   ></textarea>
                   <label>
-                    <div class="checkboxWrapper">
+                    <div class="modal__checkbox-wrapper">
                       <input
                         type="checkbox"
                         name="checkbox-accept"
-                        class="checkboxHidden"
+                        class="modal__checkbox-hidden"
                         value="agreed"
                         required
                       />
-                      <svg width="16" height="15" class="checkboxNotChecked">
+                      <svg width="16" height="15" class="modal__checkbox-not-checked">
                         <use href="./images/icons.svg#icon-checkbox"></use>
                       </svg>
-                      <svg width="16" height="15" class="checkboxChecked">
+                      <svg width="16" height="15" class="modal__checkbox-checked">
                         <use href="./images/icons.svg#icon-check"></use>
                       </svg>
                     </div>
-                    <span class="modalInBottom">
-                      Oświadczam iż akceptuję <a class="regColorlOne" href="#">Regulamin</a> i
-                      <a class="regColorlTwo" href="#">Politykę Prywatności.</a>
-                      <button class="buttonInModalBotom" type="submit">Wyślij</button>
+                    <span class="modal__in-bottom">
+                      Oświadczam iż akceptuję
+                      <a class="modal__reg-colorl-one" href="#">Regulamin</a> i
+                      <a class="modal__reg-colorl-two" href="#">Politykę Prywatności.</a>
+                      <button class="modal__button-in-botom" type="submit">Wyślij</button>
                     </span>
                   </label>
                 </form>
@@ -152,43 +155,43 @@
       </section>
       <!-- MAIN TEKST BOX -->
       <section class="container">
-        <ul class="flexArticleTitle">
+        <ul class="article__flex-title">
           <hgroup>
-            <svg class="borderAticle svgMargin">
+            <svg class="article__border svg--margin">
               <use href="./images/icons.svg#icon-sat" width="70"></use>
             </svg>
-            <h2 class="articleTitle">LOREM IPSUM</h2>
-            <p class="articleTitleTxt">
+            <h2 class="article__title">LOREM IPSUM</h2>
+            <p class="article__title-txt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </hgroup>
           <hgroup>
-            <svg class="borderAticle svgMargin">
+            <svg class="article__border svg--margin">
               <use href="./images/icons.svg#icon-clock" width="70"></use>
             </svg>
-            <h2 class="articleTitle">LOREM IPSUM</h2>
-            <p class="articleTitleTxt">
+            <h2 class="article__title">LOREM IPSUM</h2>
+            <p class="article__title-txt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </hgroup>
           <hgroup>
-            <svg class="borderAticle svgMargin">
+            <svg class="article__border svg--margin">
               <use href="./images/icons.svg#icon-diagram" width="70"></use>
             </svg>
-            <h2 class="articleTitle">LOREM IPSUM</h2>
-            <p class="articleTitleTxt">
+            <h2 class="article__title">LOREM IPSUM</h2>
+            <p class="article__title-txt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </hgroup>
           <hgroup>
-            <svg class="borderAticle svgMargin">
+            <svg class="article__border svg--margin">
               <use href="./images/icons.svg#icon-astronaut" width="70"></use>
             </svg>
-            <h2 class="articleTitle">LOREM IPSUM</h2>
-            <p class="articleTitleTxt">
+            <h2 class="article__title">LOREM IPSUM</h2>
+            <p class="article__title-txt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
@@ -197,130 +200,130 @@
       </section>
       <!-- PICTURES BOX -->
       <section class="container">
-        <h2 class="resthHtwoImg">Czym się zajmujemy</h2>
-        <div class="flexImageOneIndex">
+        <h2 class="picture__img-txt">Czym się zajmujemy</h2>
+        <div class="picture__flex-index">
           <div>
             <img src="images/services/programming.jpg" alt="keyboard" width="370" height="294" />
-            <a class="boxIndexTextOne">Aplikacje komputerowe </a>
+            <a class="picture__box-index-one">Aplikacje komputerowe </a>
           </div>
           <div>
             <img src="images/services/ui.jpg" alt="smartfon" width="370" height="294" />
-            <a class="boxIndexTextTwo">Aplikacje mobilne</a>
+            <a class="picture__box-index-two">Aplikacje mobilne</a>
           </div>
           <div>
             <img src="images/services/desgin.jpg" alt="tablet" width="370" height="294" />
-            <a class="boxIndexTextThere">Rozwiązania graficzne</a>
+            <a class="picture__box-index-there">Rozwiązania graficzne</a>
           </div>
         </div>
       </section>
       <!-- TEAM BOX -->
-      <section class="flexPerson">
+      <section class="team">
         <div class="container">
-          <h2 class="resthHtwo">Nasz zespół</h2>
-          <ul class="flexImgPersonOne">
-            <li class="ImgTxtPerson">
+          <h2 class="team__resth-two">Nasz zespół</h2>
+          <ul class="team__flex-img-person-one">
+            <li class="team__img-txt-person">
               <img src="images/team/personone.jpg" alt="Krzysztof" width="270" height="260" />
-              <div class="personName">John Doe</div>
-              <div class="personNameTxt">Product Designer</div>
-              <div class="flexSvgIcon">
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+              <div class="team__person-name">John Doe</div>
+              <div class="team__person-name-txt">Product Designer</div>
+              <div class="team__flex-svg-icon">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin2"></use>
                   </svg>
                 </a>
               </div>
             </li>
-            <li class="ImgTxtPerson">
+            <li class="team__img-txt-person">
               <img src="images/team/persontwo.jpg" alt="Magda" width="270" height="260" />
-              <div class="personName">John Doe</div>
-              <div class="personNameTxt">Frontend Developer</div>
-              <div class="flexSvgIcon">
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+              <div class="team__person-name">John Doe</div>
+              <div class="team__person-name-txt">Frontend Developer</div>
+              <div class="team__flex-svg-icon">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin2"></use>
                   </svg>
                 </a>
               </div>
             </li>
-            <li class="ImgTxtPerson">
+            <li class="team__img-txt-person">
               <img src="images/team/personthre.jpg" alt="Maciek" width="270" height="260" />
-              <div class="personName">John Doe</div>
-              <div class="personNameTxt">Marketing</div>
-              <div class="flexSvgIcon">
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+              <div class="team__person-name">John Doe</div>
+              <div class="team__person-name-txt">Marketing</div>
+              <div class="team__flex-svg-icon">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin2"></use>
                   </svg>
                 </a>
               </div>
             </li>
-            <li class="ImgTxtPerson">
+            <li class="team__img-txt-person">
               <img src="images/team/personfour.jpg" alt="Kuba" width="270" height="260" />
-              <div class="personName">John Doe</div>
-              <div class="personNameTxt">UI Designer</div>
-              <div class="flexSvgIcon">
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+              <div class="team__person-name">John Doe</div>
+              <div class="team__person-name-txt">UI Designer</div>
+              <div class="team__flex-svg-icon">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
-                <a class="borderSvg">
-                  <svg class="margines" width="20" height="20">
+                <a class="team__border-svg">
+                  <svg class="team__margines" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin2"></use>
                   </svg>
                 </a>
@@ -331,9 +334,9 @@
       </section>
       <!-- CLIENT BOX -->
       <section class="container">
-        <h2 class="partners">Nasi klienci</h2>
-        <ul class="svgPartners">
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+        <h2 class="client">Nasi klienci</h2>
+        <ul class="client__svg">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo1"
               width="106"
@@ -342,7 +345,7 @@
               x="32"
             ></use>
           </svg>
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo2"
               width="106"
@@ -351,7 +354,7 @@
               x="32"
             ></use>
           </svg>
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo3"
               width="106"
@@ -360,7 +363,7 @@
               x="32"
             ></use>
           </svg>
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo4"
               width="106"
@@ -369,7 +372,7 @@
               x="32"
             ></use>
           </svg>
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo5"
               width="106"
@@ -378,7 +381,7 @@
               x="32"
             ></use>
           </svg>
-          <svg class="borderSvgSTreeIndex svgcolorStreeInex">
+          <svg class="client__border-svg-index svg--color-inex">
             <use
               href="./images/icons.svg#icon-client-logo6"
               width="106"
@@ -391,39 +394,39 @@
       </section>
       <!-- FOOTER BOX -->
     </main>
-    <footer class="addresColor">
-      <div class="container flexAdres">
+    <footer class="adress__color">
+      <div class="container adress__flex">
         <div>
-          <div class="WebStudioAdress">
-            <span class="wstudio">Web</span><span class="wStudioAdres">Studio </span>
+          <div class="adress__web-studio">
+            <span class="adress__w-studio">Web</span><span class="adress__studio">Studio </span>
           </div>
           <address>
-            <div class="addres">m. Warszawa, Aleje Jerozolimskie 21</div>
-            <a class="email-telAdress" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="email-telAdress" href="tel:+48111111111">+48 111 111 111</a>
+            <div class="addres__bottom">m. Warszawa, Aleje Jerozolimskie 21</div>
+            <a class="addres__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="addres__email" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
         <div>
-          <h2 class="botomIconsName">Dołącz do nas</h2>
-          <ul class="botomIcons">
-            <li class="smIcons">
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+          <h2 class="addres_botom-icons-name">Dołącz do nas</h2>
+          <ul class="addres__botom-icons">
+            <li class="addres__sm-icons">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
-              <a class="borderSvgAdress">
-                <svg class="marginesAdres" width="44" height="20">
+              <a class="addres__border-svg">
+                <svg class="addres__margines" width="44" height="20">
                   <use href="./images/icons.svg#icon-linkedin2"></use>
                 </svg>
               </a>
@@ -431,13 +434,19 @@
           </ul>
         </div>
         <!-- CHECKBOX -->
-        <div class="butonEmail">
+        <div class="send__buton">
           <h2>ZAPISZ SIĘ DO NEWSLETTERA</h2>
           <fom>
-            <input class="inputSize" type="email" name="subscribe" placeholder="E-mail" required />
-            <button class="butonColor" type="submit">
-              <span class="butonbotonText"> Zapisz się</span>
-              <svg class="svgMargBottom" width="24" height="24">
+            <input
+              class="send__input-size"
+              type="email"
+              name="subscribe"
+              placeholder="E-mail"
+              required
+            />
+            <button class="send__buton-color" type="submit">
+              <span class="send__buton-bottom-text"> Zapisz się</span>
+              <svg class="send__svg-marg-bottom" width="24" height="24">
                 <use href="images/icons.svg#icon-send-sub"></use>
               </svg>
             </button>

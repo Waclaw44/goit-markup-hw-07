@@ -806,7 +806,7 @@ a {
   margin-top: 30px;
 }
 
-.borderImgPortfolio {
+.grid__border-img-portfolio {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -818,16 +818,16 @@ a {
   transition: 0.2s;
 }
 
-.borderImgPortfolio:hover .OnBox {
+.grid__border-img-portfolio:hover .grid__on-box {
   transform: translate(0);
 }
 
-.boderAl:hover {
+.boder-al:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.OnBox {
+.grid__on-box {
   position: absolute;
   transform: translateY(100%);
   top: 0;
@@ -846,16 +846,16 @@ a {
   transition: 0.2s;
 }
 
-.OnBoxTr:hover {
+.on--box:hover {
   transform: translatey(0%);
 }
 
-.OnBoxTr {
+.on--box {
   transition: transform 250ms ease;
   transition: 0.2s;
 }
 
-.box_description {
+.grid__description {
   position: relative;
   z-index: 4;
   flex: 1;
@@ -864,7 +864,7 @@ a {
   border-top: 0;
 }
 
-.graf {
+.grid__graf {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.11;
@@ -873,7 +873,7 @@ a {
   padding-left: 24px;
 }
 
-.grafTxt {
+.grid__graf-txt {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
